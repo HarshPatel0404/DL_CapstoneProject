@@ -104,7 +104,7 @@ streamlit run .\streamlit_app.py
 
 Streamlit is self-contained and runs independently; it expects the same `models/` and `figures/` folders to be next to the script.
 
-Models & data
+Models & data (Models added in Releases)
 
 - Packaged model for inference: `models/legalbert_scotus/` — contains `config.json`, `tokenizer.json`, `model.safetensors` (or HF-compatible model weights).
 - Baseline artifacts: `models/logreg_scotus_tfidf.pkl` and `models/tfidf_vectorizer_scotus.pkl` (scikit-learn artifacts used by baseline).
