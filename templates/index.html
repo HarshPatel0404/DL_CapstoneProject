@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Classification - Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo-icon">⚖️</span>
+                <span class="brand-text">Legal AI Classifier</span>
+            </div>
+            <div class="nav-links">
+                <a href="/home" class="nav-link active">Home</a>
+                <a href="/visualizations" class="nav-link">Visualizations</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">AI-Powered Legal Document Classification</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Analyze legal texts using state-of-the-art machine learning models</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Model Selection Section -->
+        <section class="card animate-slide-up">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <span class="icon">🤖</span>
+                    Select Your Model
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="model-selection">
+                    <div class="model-card" id="model-bert" onclick="selectModel('bert')">
+                        <div class="model-icon">🧠</div>
+                        <h3>Legal-BERT</h3>
+                        <p>Deep learning model fine-tuned on legal documents</p>
+                        <div class="model-badge">Recommended</div>
+                    </div>
+                    <div class="model-card" id="model-tfidf" onclick="selectModel('tfidf')">
+                        <div class="model-icon">📊</div>
+                        <h3>TF-IDF + Logistic Regression</h3>
+                        <p>Traditional ML approach with fast predictions</p>
+                        <div class="model-badge">Fast</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Input Section -->
+        <section class="card animate-slide-up-delay">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <span class="icon">📝</span>
+                    Input Legal Text
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <textarea 
+                        id="input-text" 
+                        class="text-input" 
+                        placeholder="Paste your legal document text here..."
+                        rows="10"
+                    >The petitioner filed a writ petition challenging the constitutional validity of Section 377 of the Indian Penal Code. The Supreme Court held that the said provision violates the fundamental rights guaranteed under Articles 14, 15, 19 and 21 of the Constitution. The Court observed that consensual sexual acts between adults in private are protected under the right to privacy and personal liberty. The impugned provision was declared unconstitutional to the extent it criminalizes consensual sexual conduct between adults. The judgment emphasized that dignity and autonomy of individuals cannot be compromised and constitutional morality must prevail over social morality. The Court also noted that the LGBTQ community has the same fundamental rights as any other citizen and discrimination on the basis of sexual orientation is violative of constitutional principles.</textarea>
+                </div>
+                
+                <div class="options-grid">
+                                       
+                    <div class="option-item" id="topk-container" style="display: none;">
+                        <label for="top-k" class="option-label">Top K Predictions:</label>
+                        <input type="number" id="top-k" class="number-input" value="3" min="1" max="10">
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-predict" id="predict-btn">
+                    <span class="btn-icon">🚀</span>
+                    <span class="btn-text">Analyze Document</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="card results-card animate-slide-up-delay-2" id="results-section" style="display: none;">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <span class="icon">✨</span>
+                    Prediction Results
+                </h2>
+            </div>
+            <div class="card-body">
+                <div id="results-content"></div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="stats-grid animate-slide-up-delay-3">
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div class="stat-value">14</div>
+                <div class="stat-label">Legal Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-value">74%+</div>
+                <div class="stat-label">Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-value">&lt;2s</div>
+                <div class="stat-label">Avg Response Time</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔬</div>
+                <div class="stat-value">2</div>
+                <div class="stat-label">AI Models</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Legal Document Classification System. Built with AI & Machine Learning.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <p class="loading-text">Analyzing document...</p>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
