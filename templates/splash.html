@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Classification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .splash-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .project-title {
+            color: white;
+            text-align: center;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .project-title h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-title p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        .loading-container {
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .loading-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            height: 100%;
+            background: white;
+            border-radius: 10px;
+            animation: loading 2s ease-in-out;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .loading-text {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Animated background particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s infinite;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            50% {
+                transform: translateY(-100vh) translateX(50px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-title h1 {
+                font-size: 2rem;
+            }
+            .project-title p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="splash-container">
+        <div class="logo-container">
+            <div class="logo">⚖️</div>
+        </div>
+        
+        <div class="project-title">
+            <h1>Legal Document Classification</h1>
+            <p>AI-Powered Legal Text Analysis System</p>
+            <p class="subtitle">Using BERT & TF-IDF Models</p>
+        </div>
+        
+        <div class="loading-container">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Loading models...</div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const size = Math.random() * 60 + 20;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Redirect to main page after animation
+        setTimeout(() => {
+            window.location.href = '/home';
+        }, 3000);
+    </script>
+</body>
+</html>

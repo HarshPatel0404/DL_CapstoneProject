@@ -1,0 +1,5 @@
+legalbert_out/
+models/
+.venv/
+.venv_backup_20251121154232/
+__pycache__

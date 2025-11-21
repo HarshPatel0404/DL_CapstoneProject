@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Visualizations - Legal AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo-icon">⚖️</span>
+                <span class="brand-text">Legal AI Classifier</span>
+            </div>
+            <div class="nav-links">
+                <a href="/home" class="nav-link">Home</a>
+                <a href="/visualizations" class="nav-link active">Visualizations</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Model Performance Visualizations</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Explore detailed metrics and analysis charts</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Visualizations Grid -->
+        <section class="card animate-slide-up">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <span class="icon">📊</span>
+                    Performance Metrics & Charts
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="viz-grid" id="viz-grid">
+                    <!-- Images will be loaded here dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CSV Metrics -->
+        <section class="card animate-slide-up-delay">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <span class="icon">📈</span>
+                    Detailed Metrics Tables
+                </h2>
+            </div>
+            <div class="card-body">
+                <div id="csv-container">
+                    <!-- CSV tables will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal" id="image-modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <img src="" alt="Visualization" id="modal-image">
+            <div class="modal-caption" id="modal-caption"></div>
+            <div class="modal-nav">
+                <button class="modal-nav-btn" onclick="previousImage()">← Previous</button>
+                <button class="modal-nav-btn" onclick="nextImage()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Legal Document Classification System. Built with AI & Machine Learning.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <p class="loading-text">Loading visualizations...</p>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
