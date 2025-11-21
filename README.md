@@ -22,7 +22,7 @@ This README gives clear, copy-paste instructions for installing, running, and ex
 
 Watch the demo video here:
 
-👉 **[Click to Watch Demo](https://nuvuniversity-my.sharepoint.com/:v:/g/personal/bosmiya_a_rajubhai_nuv_ac_in/IQB-UAAVPEK6TLu4pDkLhdm8AYhSQx6zFb_TDHiTIwYFLlQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXMifX0%3D&e=Kg9MRt)**  
+👉 **[Click to Watch Demo](https://nuvuniversity-my.sharepoint.com/:v:/g/personal/bosmiya_a_rajubhai_nuv_ac_in/IQB-UAAVPEK6TLu4pDkLhdm8AYhSQx6zFb_TDHiTIwYFLlQ?e=1dhT8j&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)**  
 ---
 
 Table of contents
