@@ -1,0 +1,17 @@
+:: Run instructions for Flask HTML frontend (PowerShell)
+cd "C:\Users\Admin\Desktop\deep learning"
+python -m venv .venv
+# Activate (if your PowerShell execution policy allows):
+# .\.venv\Scripts\Activate.ps1
+# If Activate.ps1 is blocked you can use the venv python/pip directly:
+.\.venv\Scripts\pip.exe install -r .\requirements.txt
+.\.venv\Scripts\python.exe app.py
+
+Open http://127.0.0.1:8501 in your browser.
+
+Notes:
+- Installing `torch` may be slow and may require a platform-specific wheel for CUDA support. If you only want the UI and baseline model operations (no BERT inference), you can install a smaller subset:
+.\.venv\Scripts\pip.exe install Flask flask-cors scikit-learn pandas joblib Pillow
+
+Replace or adapt commands above if you prefer to activate the venv with `Activate.ps1`.
+cd 'c:\Users\Admin\Desktop\deep learning'; python -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install -r .\requirements.txt; streamlit run .\streamlit_app.py

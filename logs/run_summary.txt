@@ -1,0 +1,8 @@
+
+Run summary:
+- Date: 2025-11-19 13:36:58
+- Model: nlpaueb/legal-bert-base-uncased
+- Num labels: 13
+- TF-IDF baseline micro/macro: 0.7336/0.6086
+- Legal-BERT micro/macro: 0.7321/0.5943
+- SAVE_DIR: /content/gdrive/My Drive/Colab Notebooks/Sem-7/DL/Project
