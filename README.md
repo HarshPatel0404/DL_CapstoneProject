@@ -22,7 +22,7 @@ This README gives clear, copy-paste instructions for installing, running, and ex
 
 You can watch the project demo video here:
 
-👉 **[Click to Watch Demo Video](https://nuvuniversity-my.sharepoint.com/personal/bosmiya_a_rajubhai_nuv_ac_in/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbosmiya_a_rajubhai_nuv_ac_in%2FDocuments%2FAttachments%2FScreen+Recording+2025-11-21+182934.mp4&ct=1763730522333&or=OWA-NT-Mail&cid=7310bed3-0ad4-1ba8-6585-d46ce0b27699&ga=1&startedResponseCatch=true&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.25287a77-7c8c-4db8-98f0-e27916706edc)**
+👉 **[Click to Watch Demo Video]([https://nuvuniversity-my.sharepoint.com/personal/bosmiya_a_rajubhai_nuv_ac_in/_layouts/15/stream.aspx?id=%2Fpersonal%2Fbosmiya_a_rajubhai_nuv_ac_in%2FDocuments%2FAttachments%2FScreen+Recording+2025-11-21+182934.mp4&ct=1763730522333&or=OWA-NT-Mail&cid=7310bed3-0ad4-1ba8-6585-d46ce0b27699&ga=1&startedResponseCatch=true&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.25287a77-7c8c-4db8-98f0-e27916706edc](https://nuvuniversity-my.sharepoint.com/:v:/g/personal/bosmiya_a_rajubhai_nuv_ac_in/IQB-UAAVPEK6TLu4pDkLhdm8AYhSQx6zFb_TDHiTIwYFLlQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Kg9MRt))**
 ---
 
 Table of contents
